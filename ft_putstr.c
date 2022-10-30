@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/30 15:39:31 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/10/30 19:42:03 by hamaarou         ###   ########.fr       */
+/*   Created: 2022/10/30 17:55:43 by hamaarou          #+#    #+#             */
+/*   Updated: 2022/10/30 18:27:37 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+void	ft_putstr(char *str)
+{
+	int	i;
 
-# include <stdarg.h>
-# include <unistd.h>
-
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
-void	ft_putnbr(char *str);
-
-int		ft_printf(const char *str, ...);
-int		ft_atoi(const char *str);
-
-#endif
+	if (!str)
+		return ;
+	i = 0;
+	while (str[i])
+		write(1, &str[i++], 1);
+}
