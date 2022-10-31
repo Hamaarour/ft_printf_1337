@@ -8,5 +8,9 @@
 		"statusBarItem.remoteBackground": "#832561",
 		"statusBarItem.remoteForeground": "#e7e7e7"
 	},
-	"peacock.color": "#832561"
+	"peacock.color": "#832561",
+	"files.associations": {
+		"unistd.h": "c",
+		"libcharset.h": "c"
+	}
 }

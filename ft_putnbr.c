@@ -6,24 +6,17 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:47:20 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/10/30 20:33:26 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/10/31 18:33:39 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libcharset.h"
-#include <unistd.h>
+#include "libftprintf.h"
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-void	ft_putnbr(int nbr)
+int	ft_putnbr(int nbr)
 {
 	if (nbr == -2147483648)
 	{
 		write(1, "-2147483648", 11);
-		return ;
 	}
 	if (nbr < 0)
 	{
@@ -37,4 +30,5 @@ void	ft_putnbr(int nbr)
 	}
 	else
 		ft_putchar(nbr + 48);
+	return (count_nbr(nbr));
 }

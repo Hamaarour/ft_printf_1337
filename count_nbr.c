@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   count_nbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/30 17:55:43 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/10/31 14:49:49 by hamaarou         ###   ########.fr       */
+/*   Created: 2022/10/31 13:53:42 by hamaarou          #+#    #+#             */
+/*   Updated: 2022/10/31 14:48:19 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int	ft_putstr(char *str)
+int	count_nbr(long nbr)
 {
-	int		i;
-	char	*n;
+	int	count;
 
-	n = "(null)";
-	i = 0;
-	if (!str)
-		return (ft_putstr(n));
-	while (str[i])
-		write(1, &str[i++], 1);
-	return (ft_strlen(str));
+	count = 0;
+	if (nbr == 0)
+	{
+		count++;
+		return (count);
+	}
+	while (nbr != 0)
+	{
+		nbr /= 10;
+		count++;
+	}
+	return (count);
 }

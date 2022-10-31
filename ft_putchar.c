@@ -5,12 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/30 17:51:54 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/10/30 18:31:57 by hamaarou         ###   ########.fr       */
+/*   Created: 2022/10/31 13:37:46 by hamaarou          #+#    #+#             */
+/*   Updated: 2022/10/31 17:18:31 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c)
+#include "libftprintf.h"
+
+int	ft_putchar(char c)
 {
 	write(1, &c, 1);
+	return (1);
 }
