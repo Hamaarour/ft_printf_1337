@@ -1,6 +1,13 @@
-#include "libftprintf.h"
 
+#include "libftprintf.h"
+#include <stdarg.h>
+#include <stdio.h>
+
+// Variadic function to add numbers
+
+// Driver Code
 int	main(void)
 {
-	ft_putnbr_hex(16, 'X');
+	printf("%u " , 165);
+	return (0);
 }

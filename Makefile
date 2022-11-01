@@ -6,7 +6,7 @@
 #    By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/30 11:28:01 by hamaarou          #+#    #+#              #
-#    Updated: 2022/10/31 17:27:33 by hamaarou         ###   ########.fr        #
+#    Updated: 2022/11/01 10:14:15 by hamaarou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,10 +14,12 @@ NAME = libftprintf.a
 CC = cc
 CFLAGS =-Wall -Wextra -Werror
 
-SRC= count_nbr.c ft_putchar.c ft_putnbr.c ft_putstr.c   ft_strlen.c ft_putnbr_hex.c
+SRC= 	count_nbr.c ft_putchar.c ft_putnbr.c ft_putstr.c  \
+		ft_strlen.c ft_putnbr_hex.c ft_printf.c
 
 
-OBJ= count_nbr.o ft_putchar.o  ft_putnbr.o ft_putstr.o   ft_strlen.o ft_putnbr_hex.o
+OBJ= 	count_nbr.o ft_putchar.o  ft_putnbr.o ft_putstr.o   \
+		ft_strlen.o ft_putnbr_hex.o  ft_printf.o
 
 .PHONY = all clean fclean re
 

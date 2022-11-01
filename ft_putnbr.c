@@ -6,7 +6,7 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:47:20 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/10/31 18:33:39 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/10/31 21:42:16 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ int	ft_putnbr(int nbr)
 	}
 	else
 		ft_putchar(nbr + 48);
-	return (count_nbr(nbr));
+	return (count_nbr(nbr, 10));
 }
