@@ -6,7 +6,7 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 08:46:06 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/11/01 19:17:14 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/01 21:42:00 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@ int	prnt_second(va_list args, char k)
 		c += ft_putnbr_hex(va_arg(args, unsigned long), 'x');
 	else if (k == 'X')
 		c += ft_putnbr_hex(va_arg(args, unsigned long), 'X');
-
+	else if (k == '%')
+		c += ft_putchar('%');
 	return (c);
 }
 
@@ -45,6 +46,10 @@ int	ft_printf(const char *str, ...)
 	va_start(args, str);
 	while (str[i])
 	{
+		if (str[i] == '%')
+			k += prnt_second(args, str[i + 1]);
+		if (str[i] != '%')
+			k += ft_putchar(str[i + 1]);
 		i++;
 	}
 	va_end(args);

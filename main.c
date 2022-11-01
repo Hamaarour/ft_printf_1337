@@ -8,6 +8,6 @@
 // Driver Code
 int	main(void)
 {
-	printf("%u " , 165);
+	ft_printf("%s " , "hicham hicham");
 	return (0);
 }
