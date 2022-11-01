@@ -6,7 +6,7 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 15:01:45 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/11/01 14:25:06 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/01 18:59:20 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,4 @@ int	ft_putnbr_hex(unsigned long nbr, char bs)
 			ft_putchar(nbr - 10 + 'a' + bs - 'x');
 	}
 	return (count_nbr(nbr, 16));
-}
-int	main(void)
-{
-	int	k;
-
-	k = ft_putnbr(166456456);
-	printf("%d", k);
 }

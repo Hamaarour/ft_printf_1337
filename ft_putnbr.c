@@ -6,13 +6,13 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:47:20 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/10/31 21:42:16 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/01 18:52:03 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int	ft_putnbr(int nbr)
+int	ft_putnbr(unsigned long nbr)
 {
 	if (nbr == -2147483648)
 	{
