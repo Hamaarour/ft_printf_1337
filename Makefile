@@ -6,7 +6,7 @@
 #    By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/30 11:28:01 by hamaarou          #+#    #+#              #
-#    Updated: 2022/11/01 10:14:15 by hamaarou         ###   ########.fr        #
+#    Updated: 2022/11/02 10:58:50 by hamaarou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,15 +23,7 @@ OBJ= 	count_nbr.o ft_putchar.o  ft_putnbr.o ft_putstr.o   \
 
 .PHONY = all clean fclean re
 
-
 all:$(NAME)
-
-#Colors:
-GREEN		=	\e[92;5;118m
-YELLOW		=	\e[93;5;226m
-GRAY		=	\e[33;2;37m
-RESET		=	\e[0m
-CURSIVE		=	\e[33;3m
 
 $(NAME):$(OBJ)
 	ar rc $(NAME) $(OBJ)

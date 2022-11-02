@@ -6,11 +6,11 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 13:37:46 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/10/31 17:18:31 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/02 10:50:46 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putchar(char c)
 {

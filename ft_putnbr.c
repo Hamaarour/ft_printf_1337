@@ -6,18 +6,14 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 19:47:20 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/11/01 21:38:37 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/02 10:50:57 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(unsigned long nbr)
 {
-	// if (nbr == -2147483648)
-	// {
-	// 	write(1, "-2147483648", 11);
-	// }
 	if (nbr < 0)
 	{
 		ft_putchar('-');

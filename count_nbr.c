@@ -6,11 +6,11 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 13:53:42 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/10/31 21:44:50 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/02 10:48:00 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	count_nbr(long nbr, int bs)
 {
