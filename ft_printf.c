@@ -6,7 +6,7 @@
 /*   By: hamaarou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 08:46:06 by hamaarou          #+#    #+#             */
-/*   Updated: 2022/11/02 13:13:01 by hamaarou         ###   ########.fr       */
+/*   Updated: 2022/11/02 15:20:50 by hamaarou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,29 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-int	prnt_second(va_list args, char *k)
+int	prnt_second(va_list args, char k)
 {
 	int	c;
 
 	c = 0;
-	if (*(k + 1) == 'c')
-		c = ft_putchar(va_arg(args, int));
-	if (*(k + 1) == 's')
-		c = ft_putstr(va_arg(args, char *));
-	if (*(k + 1) == 'd')
-		c = ft_putnbr(va_arg(args, int));
-	if (*(k + 1) == 'i')
-		c = ft_putnbr(va_arg(args, int));
-	if (*(k + 1) == 'x')
-		c = ft_putnbr_hex(va_arg(args, unsigned int), 'x');
-	if (*(k + 1) == 'X')
-		c = ft_putnbr_hex(va_arg(args, unsigned int), 'X');
-	if (*(k + 1) == '%')
-		c = ft_putchar('%');
-	if (*(k + 1) == 'p')
+	if (k == 'c')
+		c += ft_putchar(va_arg(args, int));
+	if (k == 's')
+		c += ft_putstr(va_arg(args, char *));
+	if (k == 'd' || k == 'i')
+		c += ft_putnbr(va_arg(args, int));
+	if (k == 'u')
+		c += ft_putnbr(va_arg(args, unsigned int));
+	if (k == 'x')
+		c += ft_putnbr_hex(va_arg(args, unsigned int), 'x');
+	if (k == 'X')
+		c += ft_putnbr_hex(va_arg(args, unsigned int), 'X');
+	if (k == '%')
+		c += ft_putchar('%');
+	if (k == 'p')
 	{
-		c = ft_putstr("0x");
-		c = ft_putnbr_hex(va_arg(args, unsigned long), 'x');
+		c += ft_putstr("0x");
+		c += ft_putnbr_hex(va_arg(args, unsigned long), 'x');
 	}
 	return (c);
 }
@@ -49,16 +49,20 @@ int	ft_printf(const char *str, ...)
 
 	i = 0;
 	k = 0;
+	if (!str)
+		return (0);
 	va_start(args, str);
-	while (str[i])
+	while (str[i] != 0)
 	{
 		if (str[i] == '%')
 		{
-			k = prnt_second(args, (1));
-			i += 2;
+			k += prnt_second(args, str[i + 1]);
+			i++;
 		}
 		else
-			k = ft_putchar(str[i]);
+		{
+			k += ft_putchar(str[i]);
+		}
 		i++;
 	}
 	va_end(args);
