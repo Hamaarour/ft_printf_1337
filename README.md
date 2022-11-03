@@ -10,7 +10,6 @@ printf("The value is %d\n", counter);
 # VARIADIC FUNCTION
 
 -> A variable function is an undefined edge function.
-https://medium.com/swlh/variadic-function-in-c-programming-d3632315a48e
 
 ->TYPEDEF VA_LIST:
 
@@ -34,6 +33,9 @@ https://medium.com/swlh/variadic-function-in-c-programming-d3632315a48e
 
 --> Important !! -- >Read this. 
 https://www.geeksforgeeks.org/understanding-register-keyword/
+https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/va-arg-va-copy-va-end-va-start?view=msvc-170
+https://medium.com/swlh/variadic-function-in-c-programming-d3632315a48e
+https://stackoverflow.com/questions/23104628/technically-how-do-variadic-functions-work-how-does-printf-work
 
 ->Sometimes, va_list is simply char*. Basically, ap represents an array of pointers to chars. When calling va_arg(ap, TYPE) it reads memory from address at which ap points, but it reads it as TYPE type. So, if you call it with int it will read 4 bytes and convert it to int type
 
