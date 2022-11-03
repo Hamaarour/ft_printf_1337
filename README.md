@@ -24,13 +24,16 @@ https://medium.com/swlh/variadic-function-in-c-programming-d3632315a48e
 
 	The (va_start) macro initializes the structure as follows:
 	reg_save_area The element points to the start of the register save area
-	Important !! -- >Read this.https://www.geeksforgeeks.org/understanding-register-keyword/
+	
 
 	overﬂow_arg_area This pointer is used to fetch arguments passed on the stack. It is initialized with the address of the first argument passed on the stack, if any, 	and then always updated to point to the start of the next argument on the stack.
 
 	gp_offset The element holds the offset in bytes from reg_save_area to the place where the next available general purpose argument register is saved. In case all 	argument registers have been exhausted, it is set to the value 48 (6 * 8).
 
 	fp_offset The element holds the offset in bytes from reg_save_area to the place where the next available floating point argument register is saved. In case all 	argument registers have been exhausted, it is set to the value 304 (6 * 8 + 16 * 16).
+
+--> Important !! -- >Read this. 
+https://www.geeksforgeeks.org/understanding-register-keyword/
 
 ->Sometimes, va_list is simply char*. Basically, ap represents an array of pointers to chars. When calling va_arg(ap, TYPE) it reads memory from address at which ap points, but it reads it as TYPE type. So, if you call it with int it will read 4 bytes and convert it to int type
 
