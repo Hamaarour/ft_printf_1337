@@ -10,7 +10,7 @@ printf("The value is %d\n", counter);
 # VARIADIC FUNCTION
 
 -> A variable function is an undefined edge function.
-
+<a href ="https://medium.com/swlh/variadic-function-in-c-programming-d3632315a48e"/> 
 
 ->TYPEDEF VA_LIST:
 
@@ -24,7 +24,8 @@ printf("The value is %d\n", counter);
 
 	The (va_start) macro initializes the structure as follows:
 	reg_save_area The element points to the start of the register save area
-	Important !! -- >Read this.(https://www.geeksforgeeks.org/understanding-register-keyword/).
+	Important !! -- >Read this.  
+	<a href= "https://www.geeksforgeeks.org/understanding-register-keyword/"/>
 
 	overﬂow_arg_area This pointer is used to fetch arguments passed on the stack. It is initialized with the address of the first argument passed on the stack, if any, 	and then always updated to point to the start of the next argument on the stack.
 
