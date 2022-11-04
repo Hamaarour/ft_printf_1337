@@ -31,11 +31,7 @@ printf("The value is %d\n", counter);
 
 	fp_offset The element holds the offset in bytes from reg_save_area to the place where the next available floating point argument register is saved. In case all 	argument registers have been exhausted, it is set to the value 304 (6 * 8 + 16 * 16).
 
---> Important !! -- >Read this. 
-https://www.geeksforgeeks.org/understanding-register-keyword/
-https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/va-arg-va-copy-va-end-va-start?view=msvc-170
-https://medium.com/swlh/variadic-function-in-c-programming-d3632315a48e
-https://stackoverflow.com/questions/23104628/technically-how-do-variadic-functions-work-how-does-printf-work
+
 
 ->Sometimes, va_list is simply char*. Basically, ap represents an array of pointers to chars. When calling va_arg(ap, TYPE) it reads memory from address at which ap points, but it reads it as TYPE type. So, if you call it with int it will read 4 bytes and convert it to int type
 
@@ -93,3 +89,21 @@ ABOUT PRINTF
 	-% sign percentage
  
 ->Deff btw %i and %d is that in scanf; 012 (d = 12) (i = 10)
+## 📌 Useful Links
+
+* [C++ Reference - printf](http://www.cplusplus.com/reference/cstdio/printf/)
+* [Article: Secrets of “printf” (PDF)](https://www.cypress.com/file/54441/download)
+* [MacOS documentation - printf](https://opensource.apple.com/source/xnu/xnu-201/osfmk/kern/printf.c.auto.html)
+* [IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
+* [How does one print floats for ft_printf? - Stack Overflow - 42 Network](https://stackoverflow.com/c/42network/questions/133/134#134)
+* [Printing Floating-Point Numbers](http://www.ryanjuckett.com/programming/printing-floating-point-numbers/)
+* [Printing Floating-Point Numbers Quickly and Accurately with Integers](https://www.cs.tufts.edu/~nr/cs257/archive/florian-loitsch/printf.pdf)
+* [What precisely does the %g printf specifier mean? - Stack Overflow](https://stackoverflow.com/questions/54162152/what-precisely-does-the-g-printf-specifier-mean)
+* [C Reference - Regester](https://www.geeksforgeeks.org/understanding-register-keyword/)
+* [C Microsoft explain - variadic](https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/va-arg-va-copy-va-end-va-start?view=msvc-170)
+* [Variadic function in C](https://medium.com/swlh/variadic-function-in-c-programming-d3632315a48e)
+* [How does printf work](https://stackoverflow.com/questions/23104628/technically-how-do-variadic-functions-work-how-does-printf-work)
+
+
+
+
