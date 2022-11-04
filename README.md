@@ -1,4 +1,19 @@
-# ft_printf_1337
+<h1 align="center">
+	42cursus' ft_printf
+</h1>
+
+<p align="center">
+	<b><i>Development repo for 42cursus' ft_printf project</i></b><br>
+	For further information about 42cursus and its projects, please refer to <a href="https://github.com/achrafelkhnissi/1337/blob/master/42curses/README.md"><b>42cursus repo</b></a>.
+</p>
+
+
+<h3 align="center">
+	<a href="#%EF%B8%8F-about">About</a>
+	<span> · </span>
+	<a href="#-useful-links">Useful Links</a>
+</h3>
+
 
 ## 🗣️ About
 The printf function (the name comes from “print formatted”) prints a string on the screen using a “format string” that includes the instructions to mix several strings and produce the final string to be printed on the screen.
@@ -6,6 +21,21 @@ The printf function (the name comes from “print formatted”) prints a string 
 ```c
 printf("The value is %d\n", counter);
 ```
+
+->The printf function (the name comes from “print formatted”) prints a string on the screen using a “format string” that includes the instructions to mix several strings and produce the final string to be printed on the screen
+
+->The symbol “%” denotes the beginning of a format : <br>
+	-d for int <br>
+	-s for string <br>
+	-c for caracter <br>
+	-p for dress en hex <br>
+	-I like d <br>
+	-u int decimal unsigned <br>
+	-x hex whit lowercase <br>
+	-X hex with uppercase <br>
+	-% sign percentage <br>
+ <br>
+->Deff btw %i and %d is that in scanf; 012 (d = 12) (i = 10)
 <Br><br><br>
 # VARIADIC FUNCTION
 
@@ -73,22 +103,6 @@ Sr.No.	|Macro Name	|Description
 	->va_copy   : copy the va_list.
    	 The va_copy() macro copies the (previously initialized) variable argument list src to dest.
 
-ABOUT PRINTF
-
-->The printf function (the name comes from “print formatted”) prints a string on the screen using a “format string” that includes the instructions to mix several strings and produce the final string to be printed on the screen
-
-->The symbol “%” denotes the beginning of a format :
-	-d for int
-	-s for string
-	-c for caracter
-	-p for dress en hex
-	-I like d
-	-u int decimal unsigned
-	-x hex whit lowercase
-	-X hex with uppercase
-	-% sign percentage
- 
-->Deff btw %i and %d is that in scanf; 012 (d = 12) (i = 10)
 ## 📌 Useful Links
 
 * [C++ Reference - printf](http://www.cplusplus.com/reference/cstdio/printf/)
