@@ -37,6 +37,23 @@ printf("The value is %d\n", counter);
  <br>
 ->Deff btw %i and %d is that in scanf; 012 (d = 12) (i = 10)
 <Br><br><br>
+
+# Understanding size_t 
+The type size_t represents the maximum size any object can be in C. It is an unsigned
+integer since negative numbers do not make sense in this context. Its purpose is to
+provide a portable means of declaring a size consistent with the addressable area of
+memory available on a system. The size_t type is used as the return type for the sizeof
+operator and as the argument to many functions, including malloc and strlen, among
+others.
+
+```
+It is good practice to use size_t when declaring variables for sizes such
+as the number of characters and array indexes. It should be used for
+loop counters, indexing into arrays, and sometimes for pointer
+arithmetic.
+```
+<br><br><br>
+
 # VARIADIC FUNCTION
 
 -> A variable function is an undefined edge function.
