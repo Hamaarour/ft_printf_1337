@@ -1,3 +1,4 @@
+![Cover](https://github.com/Hamaarour/ft_printf_1337/blob/main/ft_printf_cover.png)
 <h1 align="center">
 	42cursus' ft_printf
 </h1>
